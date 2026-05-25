@@ -74,8 +74,8 @@ Both units share an identical height profile and footprint area to keep the opti
 * **Electrical & Power:** 5V DC operating voltage. Both units draw a baseline 102 mA (0.51W) during standard operation (typing and idling). The transmitter draws a brief 352 mA peak (1.76W) exclusively while the motor runs during the initial alignment sweep.
 * **Battery Life:** ~5.68 hours for the receiver, and up to ~5.68 hours for the transmitter during standard typing and transmission. Transmitter operational life scales down to ~1.65 hours if forced into a continuous, non-stop motor-scanning loop.
 * **Performance:** Range verified up to 3.8 meters (12.5 feet). Automated spatial alignment completes within a 0 to 30 second window.
-* **Protocol & Timing:** Custom 34-bit direct-binary protocol operating at 10 Hz. Uses a 200 ms start pulse, followed by 34 data bits (50 ms pulse / 50 ms gap per bit). 
-* **Payload & Speed:** Maximum value of 9,999,999,999 sent in exactly 3.6 seconds with a 95% alignment success rate and a 100% data transmission accuracy rate once locked.
+* **Protocol & Timing:** Custom 34-bit direct-binary protocol operating at noise-resistance 10 Hz. Uses a 200 ms start pulse, followed by 34 data bits (50 ms pulse / 50 ms gap per bit). 
+* **Payload & Speed:** Maximum value of 9,999,999,999 sent in a deliberate 3.7 seconds with a 95% alignment success rate and a 100% data transmission accuracy rate once locked.
 
 ---
 
