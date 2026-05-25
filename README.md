@@ -3,7 +3,7 @@
 A wireless, line-of-sight communication system that establishes a secure data link between an automated tracking transmitter and a stationary receiver using a directional infrared beam instead of RF or Bluetooth.
 
 ## Overview
-* **Alignment:** Devices sit on the same horizontal plane within a 90° initial window.
+* **Alignment:** Devices sit on the same horizontal plane within a ±45° initial window.
 * **Range:** Transmits up to a 10-digit decimal number over at least 10 feet (3 meters).
 * **Beam Enclosure:** Hardware is deeply recessed inside a slit to narrow the signal beam for accurate alignment.
 * **Medium:** 100% wireless and completely free of RF/Bluetooth radiation.
@@ -13,11 +13,11 @@ A wireless, line-of-sight communication system that establishes a secure data li
 ## How It Works
 The system runs on a sequential state machine. To reset the link or start a new transmission, the units must be power-cycled.
 
-* **Standard Flow:** [Power On] -> [Transmitter Sweeps 90°] -> [Link Established] -> [Enter Keypad Data] -> [Data Transmitted] -> [Manual Power Reset]
+* **Standard Flow:** [Power On] -> [Transmitter Sweeps ±50°] -> [Link Established] -> [Enter Keypad Data] -> [Data Transmitted] -> [Manual Power Reset]
 * **Error Handling:** If a link failure or operational error occurs at any stage, the system enters a protective [Idle Error State] until manually power-cycled.
 
 1. **Power:** Turn on both devices at roughly the same time.
-2. **Align:** The transmitter sweeps 90° until it detects the receiver's signal, then locks into place.
+2. **Align:** The transmitter sweeps ±50° until it detects the receiver's signal, then locks into place.
 3. **Input:** The user types a number (up to 10 digits) on the transmitter's 4x4 keypad.
 4. **Send:** The number is converted to binary and transmitted via IR pulses to the receiver display.
 5. **Reset:** If any step fails or a transmission finishes, the system idles. Power-cycle both units to restart.
