@@ -39,7 +39,7 @@ The system runs on a sequential state machine. To reset the link or start a new 
 ### Wiring Diagrams
 | Transmitter Configuration | Receiver Configuration |
 | --- | --- |
-| ![Transmitter Wiring](wiring/transmitter_wiring.jpg) | ![Receiver Wiring](wiring/receiver_wiring.jpg) |
+| ![Transmitter Wiring](wiring/transmitter_wiring.png) | ![Receiver Wiring](wiring/receiver_wiring.png) |
 
 ### Component Bill of Materials & Cost Breakdown
 
@@ -70,13 +70,13 @@ Both units share an identical height profile and footprint area to keep the opti
 ---
 
 ## Technical Specs & Performance
-* **Electrical:** 5V DC operating voltage. Current draw is 420 mA max during sweeps, dropping to 100 mA at idle.
-* **Battery Life:** ~1.38 hours for the transmitter (continuous motor use) and ~5.80 hours for the receiver.
-* **Performance:** Range verified up to 3.8 meters (12.5 feet). Alignment takes 0 to 30 seconds.
+* **Electrical & Power:** 5V DC operating voltage. Both units draw a baseline 102 mA (0.51W) during standard operation (typing and idling). The transmitter draws a brief 422 mA peak (2.11W) exclusively while the motor runs during the initial alignment sweep.
+* **Battery Life:** ~5.68 hours for the receiver, and up to ~5.68 hours for the transmitter during standard typing and transmission. Transmitter operational life scales down to ~1.37 hours if forced into a continuous, non-stop motor-scanning loop.
+* **Performance:** Range verified up to 3.8 meters (12.5 feet). Automated spatial alignment completes within a 0 to 30 second window.
 * **Protocol & Timing:** Custom 34-bit direct-binary protocol operating at 10 Hz. Uses a 200 ms start pulse, followed by 34 data bits (50 ms pulse / 50 ms gap per bit). 
-* **Payload & Speed:** Maximum value of 9,999,999,999 sent in exactly 3.6 seconds with a 95% alignment success rate.
+* **Payload & Speed:** Maximum value of 9,999,999,999 sent in exactly 3.6 seconds with a 95% alignment success rate and a 100% data transmission accuracy rate once locked.
 
 ---
 
 ## Acknowledgements
-This project was developed as part of the ENG EK 210 course curriculum at Boston University during the Spring 2026 semester. It represents a collaborative engineering effort executed and finalized by a four-person team.
+This project was developed as a collaborative effort by a four-person team for the ENG EK 210 course curriculum at Boston University during the Spring 2026 semester.
