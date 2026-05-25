@@ -13,11 +13,11 @@ A wireless, line-of-sight communication system that establishes a secure data li
 ## How It Works
 The system runs on a sequential state machine. To reset the link or start a new transmission, the units must be power-cycled.
 
-[Power On] ──> [Transmitter Sweeps 90°] ──> [Link Established] ──> [Enter Keypad Data] ──> [Data Transmitted] ──> [Manual Power Reset]
-                                                   │
-                                     (If Link Fails / Error Occurs)
-                                                   ▼
-                                             [Idle Error State]
+`[Power On] ──> [Transmitter Sweeps 90°] ──> [Link Established] ──> [Enter Keypad Data] ──> [Data Transmitted] ──> [Manual Power Reset]`
+`                                                   │`
+`                                     (If Link Fails / Error Occurs)`
+`                                                   ▼`
+`                                             [Idle Error State]`
 
 1. **Power:** Turn on both devices at roughly the same time.
 2. **Align:** The transmitter sweeps 90° until it detects the receiver's signal, then locks into place.
@@ -45,13 +45,17 @@ The system runs on a sequential state machine. To reset the link or start a new 
 
 | Component | Quantity | Estimated Unit Cost | Subtotal |
 | --- | :---: | :---: | :---: |
-| Arduino Uno Microcontroller Boards | 2 | $27.60 | $55.20 |
-| 5V Unipolar Stepper Motor (28BYJ-48) + Driver | 1 | $4.89 | $4.89 |
-| 16x2 Character LCD Screen with I2C Module | 2 | $10.49 | $20.98 |
-| 4x4 Matrix Membrane Keypad | 1 | $6.85 | $6.85 |
-| 38kHz IR Transmitter LED & Receiver pair | 1 | $7.90 | $7.90 |
-| 3D Printed Structural Enclosures (PLA Material) | — | $18.50 | $18.50 |
-| Hardware & Components (Wago blocks, Rocker switches) | — | $18.09 | $18.09 |
+| Arduino Uno Rev3 Microcontroller Boards | 2 | $27.60 | $55.20 |
+| LCD Screen 16x2 with I2C Adapter | 2 | $9.99 | $19.98 |
+| Overture PLA Filament Spool | 1 | $13.98 | $13.98 |
+| M14178 IR 38kHz Transmitter + Receiver Set | 1 | $7.99 | $7.99 |
+| 16-Button Membrane Keypad | 1 | $7.55 | $7.55 |
+| M3 Screws & Bolts Assortment Kit | 1 | $6.98 | $6.98 |
+| ON/Off Rocker Switch | 1 | $6.99 | $6.99 |
+| Energizer MAX 9V Batteries (2 Pack) | 1 | $6.78 | $6.78 |
+| 5V Stepper Motor (28BYJ-48) + Driver | 1 | $2.96 | $2.96 |
+| 5-Line COMPACT Splicing Wago Connectors | 4 | $0.60 | $2.40 |
+| Inline Splicing Wago Connectors with Lever | 4 | $0.40 | $1.60 |
 | **Total Estimated System Cost** | | | **$132.41** |
 
 ---
