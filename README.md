@@ -39,12 +39,20 @@ The system runs on a sequential state machine. To reset the link or start a new 
 ### Wiring Diagrams
 | Transmitter Configuration | Receiver Configuration |
 | --- | --- |
-| ![Transmitter Wiring](wiring/transmitter_wiring.png) | ![Receiver Wiring](wiring/receiver_wiring.png) |
+| ![Transmitter Wiring](wiring/transmitter_wiring.jpg) | ![Receiver Wiring](wiring/receiver_wiring.jpg) |
 
-### Bill of Materials & Costs
-* **Electronics:** 2x Arduino Uno, 1x Stepper Motor (28BYJ-48) + Driver, 2x 16x2 I2C LCDs, 1x 4x4 Keypad, 1x 38kHz IR Transmitter/Receiver pair.
-* **Hardware:** 9V batteries, rocker switches, Wago wire connectors, PLA filament.
-* **Total Cost:** $132.41 gross unit price.
+### Component Bill of Materials & Cost Breakdown
+
+| Component | Quantity | Estimated Unit Cost | Subtotal |
+| --- | :---: | :---: | :---: |
+| Arduino Uno Microcontroller Boards | 2 | $27.60 | $55.20 |
+| 5V Unipolar Stepper Motor (28BYJ-48) + Driver | 1 | $4.89 | $4.89 |
+| 16x2 Character LCD Screen with I2C Module | 2 | $10.49 | $20.98 |
+| 4x4 Matrix Membrane Keypad | 1 | $6.85 | $6.85 |
+| 38kHz IR Transmitter LED & Receiver pair | 1 | $7.90 | $7.90 |
+| 3D Printed Structural Enclosures (PLA Material) | — | $18.50 | $18.50 |
+| Hardware & Components (Wago blocks, Rocker switches) | — | $18.09 | $18.09 |
+| **Total Estimated System Cost** | | | **$132.41** |
 
 ---
 
@@ -71,4 +79,4 @@ Both units share an identical height profile and footprint area to keep the opti
 ---
 
 ## Acknowledgements
-Developed for the ENG EK 210 course curriculum at Boston University during the Spring 2026 semester.
+This project was developed as part of the ENG EK 210 course curriculum at Boston University during the Spring 2026 semester. It represents a collaborative engineering effort executed and finalized by a four-person team.
