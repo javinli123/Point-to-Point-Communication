@@ -49,7 +49,7 @@ The electrical connections are optimized for low-profile routing using compact t
 
 | Transmitter Configuration | Receiver Configuration |
 | --- | --- |
-| ![Transmitter Wiring](wiring/transmitter_wiring.jpg) | ![Receiver Wiring](wiring/receiver_wiring.jpg) |
+| ![Transmitter Wiring](wiring/transmitter_wiring.png) | ![Receiver Wiring](wiring/receiver_wiring.png) |
 
 ### Component Bill of Materials & Cost Breakdown
 
@@ -69,12 +69,14 @@ The electrical connections are optimized for low-profile routing using compact t
 ## CAD Enclosure Design
 The physical structure was engineered to ensure strict geometric symmetry and signal isolation. Both enclosures share an identical height profile and base footprint area, keeping the optical transceivers perfectly level with one another even with the motor stack integrated under the transmitter.
 
-![Transmitter Scanning](images/transmitter_searching.jpg)
+![System Overview](images/system_overview.jpeg)
 
 The internal electronics are housed inside clean, modular 3D-printed boxes:
 * `transmitter.png` / `receiver.png`: The main structural boxes. The optical hardware is deeply recessed within the shell, firing out of a restrictive vertical slit to create a highly directed beam.
 * `mount.png`: The automated base assembly. The entire transmitter enclosure sits directly on top of a stepper coupling connected to this base, allowing it to pan smoothly across the surface.
 * `lid.png`: Low-profile friction-fit or bolt-down covers keeping internal power buses securely contained.
+
+![Transmitter Scanning](images/transmitter_searching.jpeg)
 
 ---
 
