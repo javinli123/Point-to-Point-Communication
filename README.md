@@ -13,11 +13,8 @@ A wireless, line-of-sight communication system that establishes a secure data li
 ## How It Works
 The system runs on a sequential state machine. To reset the link or start a new transmission, the units must be power-cycled.
 
-`[Power On] ──> [Transmitter Sweeps 90°] ──> [Link Established] ──> [Enter Keypad Data] ──> [Data Transmitted] ──> [Manual Power Reset]`
-`                                                   │`
-`                                     (If Link Fails / Error Occurs)`
-`                                                   ▼`
-`                                             [Idle Error State]`
+* **Standard Flow:** [Power On] -> [Transmitter Sweeps 90°] -> [Link Established] -> [Enter Keypad Data] -> [Data Transmitted] -> [Manual Power Reset]
+* **Error Handling:** If a link failure or operational error occurs at any stage, the system enters a protective [Idle Error State] until manually power-cycled.
 
 1. **Power:** Turn on both devices at roughly the same time.
 2. **Align:** The transmitter sweeps 90° until it detects the receiver's signal, then locks into place.
